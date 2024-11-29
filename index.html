@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi I'm Calisto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .hover-effect:hover {
+      color: #007bff; /* Blue color on hover */
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6 text-center">
+        <h1>Hi I'm Calisto</h1>
+        <div class="d-flex flex-column align-items-center">
+          <p class="font-weight-bold hover-effect" onclick="openNewPage('researcher')">Researcher</p>
+          <p class="font-weight-bold hover-effect" onclick="openNewPage('graphic-designer')">Graphic Designer</p>
+          <p class="font-weight-bold hover-effect" onclick="openNewPage('ui-ux-designer')">UI/UX Designer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openNewPage(role) {
+      // Replace the URLs with the actual pages for each role
+      switch (role) {
+        case 'researcher':
+          window.open('https://example.com/researcher', '_blank');
+          break;
+        case 'graphic-designer':
+          window.open('https://example.com/graphic-designer', '_blank');
+          break;
+        case 'ui-ux-designer':
+          window.open('https://example.com/ui-ux-designer', '_blank');
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
